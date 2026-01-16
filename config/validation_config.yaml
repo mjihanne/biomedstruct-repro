@@ -1,0 +1,16 @@
+random_kfold:
+  n_splits: 5
+  n_repeats: 10
+
+stratified_group_kfold:
+  n_splits: 5
+  group_column: equipment_id
+
+temporal_split:
+  train_period: [2014, 2019]
+  test_period: [2020, 2023]
+
+roll_forward:
+  start_year: 2014
+  end_year: 2023
+  step: 1

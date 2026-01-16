@@ -1,0 +1,11 @@
+equipment_id,service,failure_type,mtbf,mttr,equipment_age,label_90d,year
+EQ001,OperatingRoom,MEC-02,120,8,5,1,2021
+EQ002,Maternity,ELEC-04,180,6,3,0,2020
+EQ003,Radiology,LOG-03,95,10,7,1,2022
+EQ004,ICU,AUT-05,140,7,4,0,2023
+EQ005,Laboratory,ECL-01,210,5,6,0,2019
+EQ006,OperatingRoom,MEC-02,110,9,8,1,2020
+EQ007,Radiology,ELEC-04,160,6,2,0,2021
+EQ008,Maternity,LOG-03,130,8,5,1,2022
+EQ009,ICU,AUT-05,100,12,9,1,2023
+EQ010,Laboratory,ECL-01,220,4,3,0,2018
