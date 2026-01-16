@@ -1,46 +1,58 @@
-\# BioMedStruct – Reproducibility Package
+\# BioMedStruct – Reproducibility Package (Synthetic Data)
 
 
 
-This repository provides a minimal and anonymized implementation of the
+This repository provides a minimal, self-contained reproducibility package
 
-experimental pipeline.
+illustrating the data preprocessing, structuring, and validation pipeline
 
-
-
-Due to confidentiality constraints, real hospital maintenance data cannot
-
-be shared. A synthetic dataset is therefore provided to illustrate the
-
-preprocessing, model training, calibration, and validation procedures.
+used in the associated study on predictive maintenance of biomedical equipment.
 
 
 
-\## Contents
+\## Scope
 
-\- Synthetic dataset
+\- Fully synthetic data only (no real hospital records)
 
-\- BioMedStruct preprocessing pipeline
+\- End-to-end demonstration of the BioMedStruct preprocessing pipeline
 
-\- Model training (LR, RF, HGBT)
-
-\- Probability calibration
-
-\- Internal validation protocols
+\- Reproducible model training and validation procedures
 
 
 
-\## Environment
+\## Repository structure
 
-Python 3.10 – scikit-learn 1.4
+\- `notebooks/` – End-to-end synthetic simulation of the BioMedStruct pipeline
+
+\- `src/` – Core preprocessing and validation scripts
+
+\- `config/` – Configuration files (hyperparameters, validation settings)
+
+\- `data/` – Synthetic data used for demonstration purposes only
 
 
 
-\## Usage
+\## Reproducibility
 
-pip install -r requirements.txt  
+All experiments are deterministic and executed with a fixed random seed
 
-python run\_experiment.py
+(`random\_state = 42`). The repository allows replication of the methodology
+
+on synthetic or equivalent structured datasets, without access to sensitive data.
+
+
+
+\## Data availability
+
+Original hospital maintenance data are subject to confidentiality and
+
+data-governance constraints and cannot be publicly released.
+
+
+
+\## License
+
+This repository is provided for academic reproducibility purposes only.
 
 
 
