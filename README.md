@@ -1,58 +1,30 @@
-\# BioMedStruct – Reproducibility Package (Synthetic Data)
+# BioMedStruct – Reproducibility Repository
 
+This repository provides a reproducibility package illustrating the experimental pipeline used in a study on predictive maintenance of biomedical equipment. All materials are based on fully synthetic data.
 
+## Purpose
 
-This repository provides a minimal, self-contained reproducibility package
+The repository is intended for methodological reproducibility only. It allows inspection and replication of the main steps of the data structuring, preprocessing, modeling, and validation pipeline without access to real hospital data.
 
-illustrating the data preprocessing, structuring, and validation pipeline
+## Contents
 
-used in the associated study on predictive maintenance of biomedical equipment.
+- `notebooks/`  
+  Jupyter notebooks illustrating the end-to-end experimental workflow on synthetic data.
 
+- `src/`  
+  Core scripts for data preprocessing, feature structuring, model training, and validation.
 
+- `config/`  
+  Configuration files defining the experimental settings (hyperparameters, validation protocols).
 
-\## Scope
+- `data/`  
+  Fully synthetic datasets generated for demonstration and reproducibility purposes.
 
-\- Fully synthetic data only (no real hospital records)
+## Reproducibility notes
 
-\- End-to-end demonstration of the BioMedStruct preprocessing pipeline
+All experiments are deterministic and executed with a fixed random seed (`random_state = 42`).  
+The repository enables replication of the methodological framework on synthetic or equivalent structured datasets.
 
-\- Reproducible model training and validation procedures
+## License
 
-
-
-\## Repository structure
-
-\- `notebooks/` – End-to-end synthetic simulation of the BioMedStruct pipeline
-
-\- `src/` – Core preprocessing and validation scripts
-
-\- `config/` – Configuration files (hyperparameters, validation settings)
-
-\- `data/` – Synthetic data used for demonstration purposes only
-
-
-
-\## Reproducibility
-
-All experiments are deterministic and executed with a fixed random seed
-
-(`random\_state = 42`). The repository allows replication of the methodology
-
-on synthetic or equivalent structured datasets, without access to sensitive data.
-
-
-
-\## Data availability
-
-Original hospital maintenance data are subject to confidentiality and
-
-data-governance constraints and cannot be publicly released.
-
-
-
-\## License
-
-This repository is provided for academic reproducibility purposes only.
-
-
-
+This repository is provided for academic and reproducibility purposes only.
